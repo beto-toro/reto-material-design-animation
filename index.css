@@ -1,0 +1,127 @@
+:root
+{
+  --body: #00005c;
+  --blanco: #ebfffb;
+  --blue1: #7efaff;
+  --blue2: #13abc4;
+  --blue3: #3161a3;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  min-width: 100%;
+  min-height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  background-color: var(--blue3);
+}
+
+body::before
+{
+  position: absolute;
+  top: 15%;
+  left: 18%;
+  content: "RETO";
+  font-size: 30em;
+  font-weight: 900;
+  /* letter-spacing: 2; */
+  color: #4261a3;
+  /* opacity: 5; */
+}
+
+h1
+{
+  display: none;
+}
+.a
+{
+  align-self: flex-start;
+  /* min-height: 100vh; */
+  margin-top: 100px;
+  font-size: 60px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  outline: none;
+}
+.beto
+{
+  color: whitesmoke;
+}
+
+.wrapper
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  min-height: 100vh;
+}
+.nav
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.triangle
+{
+  grid-column: 1;
+  background-color: var(--blanco);
+  color: transparent;
+  text-decoration: none;
+  clip-path: polygon(50% 40%, 35% 58%, 65% 58%);
+}
+
+.triangle:hover 
+{
+  color: black;
+  clip-path: polygon(50% -10%, -500% 100%, 600% 100%);
+}
+
+.circle
+{
+  grid-column: 2;
+  background-color: var(--blue1);
+  color: black;
+  clip-path: circle(10% at 50% 48%);
+}
+.circle:hover
+{
+  clip-path: circle(100% at 50% 48%);
+}
+
+.square
+{
+  grid-column: 3;
+  background-color: var(--blue2);
+  clip-path: inset(40% 43% 43% 23%);
+}
+.square:hover
+{
+  clip-path: inset(0% 0% 0% 0%);
+}
+/* .x
+{
+  grid-column: 3;
+  background-color: var(--body);
+} */
+/* .x2
+{
+  background-color: var(--blue1);
+  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.x2:hover && 
+{
+  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+} */
